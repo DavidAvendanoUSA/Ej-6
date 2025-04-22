@@ -1,13 +1,12 @@
 package Banco_Mucha_Plata;
 
-public abstract class Cuenta {
+public abstract class Cuenta implements OperacionesCuenta {
     protected int numerProducto; 
     protected int anioApertura; 
     protected double saldo; 
     protected Titular titular; 
 
     public Cuenta(int numerProducto, int anioApertura, double saldo, Titular titular) {
-        super();
         this.titular = titular; 
         this.numerProducto = numerProducto; 
         this.anioApertura = anioApertura; 
@@ -46,10 +45,12 @@ public abstract class Cuenta {
         this.titular = titular;
     }
 
+    @Override
     public abstract void depositar(double monto); 
+    @Override
     public abstract void retirar(double monto); 
+    @Override
     public abstract String mostrarDatos();  
 }
-
 
 

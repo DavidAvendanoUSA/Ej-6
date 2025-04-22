@@ -71,5 +71,3 @@ public class CuentaCorriente extends Cuenta {
             + " - Tipo de operación: " + tipoOperacion + " - Saldo: " + saldo;
     }
 }
-
-

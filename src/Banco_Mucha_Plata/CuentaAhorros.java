@@ -11,6 +11,7 @@ public class CuentaAhorros extends Cuenta {
         this.valorUltimoRetiro = valorUltimoRetiro; 
         this.fechaUltimoRetiro = fechaUltimoRetiro; 
     }
+
     public Date getFechaUltimoRetiro() {
         return fechaUltimoRetiro;
     }
@@ -52,6 +53,6 @@ public class CuentaAhorros extends Cuenta {
     @Override
     public String mostrarDatos() {
         return "Cuenta Ahorros - " + super.numerProducto + " - " + titular.getNombre()
-            + " - Último Retiro: " + fechaUltimoRetiro + " - Valor Retiro: " + valorUltimoRetiro + " - Saldo: " + saldo;
+            + " - Último Retiro: " + fechaUltimoRetiro + " - Valor: " + valorUltimoRetiro + " - Saldo: " + saldo;
     }
 }
