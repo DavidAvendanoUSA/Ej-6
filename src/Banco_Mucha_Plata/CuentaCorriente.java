@@ -2,7 +2,7 @@ package Banco_Mucha_Plata;
 
 import java.sql.Date;
 
-public class CuentaCorriente extends Cuenta{
+public class CuentaCorriente extends Cuenta {
     private Date fechaUltimoMovimiento;
     protected double valorUltimoMovimiento;
     private String tipoOperacion;
